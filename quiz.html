@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <Title>Quiz</title>
+    <script src="https://kit.fontawesome.com/123630e991.js" crossorigin="anonymous"></script>	
+	 
+
+    
+	</head>
+    <style>
+     *{
+     	box-sizing: border-box;
+     	text-decoration: none;
+     	color: white;
+     }
+     body {
+          background-image:  linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url('image/websitebg.jpg');
+		  background-repeat: no-repeat;
+		  background-attachment:fixed ;
+          background-size:100%100%;
+		  font-family:Garamond ;	
+          }
+		  
+	p    {
+	      background-color:#000000;
+		  color:white;
+		  background: rgba(0, 0, 0, 0.5);
+		  font-size:12px;
+		  width:80%;
+		  margin:auto;
+		  letter-spacing:0.2em;
+		  padding:20px;
+		  margin-top:20px;
+		  text-align: justify;
+          }	
+		  
+	 a   {
+	      font-family: Garamond;
+          color: white;
+          padding: 14px 25px;
+          text-decoration: none;
+          display: inline-block;
+		  font-size:14px;
+		  padding-left:200px;	 
+		   
+	      }
+	a:hover{
+		color: blue;
+	}
+	ul    {
+	      background-color:#000000;
+		  color:white;
+		  background: rgba(0, 0, 0, 0.5);
+		  font-size:12px;
+		  width:80%;
+		  margin:auto;
+		  letter-spacing:0.2em;
+		  padding:20px;
+		  margin-top:20px;
+		  text-align: justify;
+          }	
+
+	.navigation
+	      {
+	      margin-top:15px;
+		  margin-bottom:15px;
+		  margin-top:20px;
+		  position:relative;
+		   font-weight: bold;
+		  background: rgba(0, 0, 0, 0.5);
+	      border-bottom: 3px solid transparent;
+          border-image: linear-gradient(to right, red , blue, purple);
+          border-image-slice: 6;
+		  border-left: 3px solid transparent;
+          border-image: linear-gradient(to right, red , blue, purple);
+          border-image-slice: 6;
+		  border-right: 3px solid transparent;
+          border-image: linear-gradient(to right, red , blue, purple);
+          border-image-slice: 6;
+		  border-top: 3px solid transparent;
+          border-image: linear-gradient(to right, red , blue, purple);
+          border-image-slice: 6;
+		  }
+ 	form{
+ 		background: rgba(27, 31, 34,0.80);
+ 		width: 640px;
+ 		margin: 50px auto;
+ 		border-radius: 4px;
+ 		padding: 55px 30px;
+ 	}
+ 	form .title h2{
+ 		letter-spacing: 6px;
+ 		border-bottom: 1px solid white;
+ 		display: inline-block;
+ 		padding-bottom: 8px;
+ 		margin-bottom: 32px;
+ 	}
+
+ 	form .half{
+ 		display: flex;
+ 		justify-content: space-between;
+ 	}
+
+ 	form .half .item{
+ 		display: flex;
+ 		flex-direction: column;
+ 		margin-bottom: 24px;
+ 		width: 48%;
+ 	}
+
+ 	form label{
+ 		display: block;
+ 		font-size: 13px;
+ 		letter-spacing: 3.5px;
+ 		margin-bottom: 16px;
+ 	}
+
+ 	form .half .item input{
+ 		border-radius: 4px;
+ 		border: 1px solid white;
+ 		outline: 0;
+ 		padding: 16px;
+ 		width: 100%;
+ 		height: 44px;
+ 		background: transparent;
+ 		font-size: 17px;
+ 	}
+
+ 	form .full{
+ 		margin-bottom: 24px;
+ 	}
+
+ 	form .full textarea{
+ 		background: transparent;
+ 		border-radius: 4px;
+ 		border: 1 px solid white;
+ 		outline: 0;
+ 		padding: 12px 16px;
+ 		width: 100%;
+ 		height: 200px;
+ 		font-size: 17px;
+ 	}
+
+ 	form .action{
+ 		margin-bottom: 32px;
+ 	}
+
+ 	form .action input{
+ 		background: transparent;
+ 		border-radius: 4px;
+ 		border: 1px solid white;
+ 		cursor: pointer;
+ 		font-size: 13px;
+ 		font-weight: 600;
+ 		height: 44px;
+ 		letter-spacing: 3px;
+ 		outline: 0;
+ 		padding: 0 20px 0 22px;
+ 		margin-right: 10px;
+ 	}
+
+ 	form .action input[type="submit"]{
+ 		background: white;
+ 		color: black;
+ 	}
+    
+    form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover{
+    	background: rgba(255, 255, 255,0.75);
+    }
+
+    .inner-footer{
+ 		align-items: center;
+ 		margin: 0;
+ 		padding: 0;
+ 		background-color: black;
+ 		
+ 	}
+ 	.socials{
+ 		display: flex;
+ 	}
+ 	.socials ul{
+ 		padding: 1px;
+ 		display: flex;
+ 		width: 320px;
+ 		height: 30px;
+ 		margin: auto;
+
+ 	}
+
+ 	.socials a{
+ 		padding: 10px 20px;
+ 		font-size: 30px;
+ 		color: white;
+
+ 	}
+ 	.socials a:hover{
+ 		color: steelblue;
+ 	}
+ 	.quick-links{
+ 		display: flex;
+ 		width: 560px;
+ 		margin: auto;
+
+ 	}
+ 	.quick-links ul{
+ 		display: flex;
+ 	}
+ 	.quick-links a{
+ 		text-decoration: none;
+ 		padding: 0px 15px;
+ 		font-size: 18px;
+ 		color: white;
+ 	}
+ 	.quick-links a:hover{
+ 		color: steelblue;
+ 	}
+ 	.outer-footer{
+ 		padding: 5px;
+ 		text-align: center;
+ 		color: white;
+ 		font-size: 18px;
+ 		background-color: gray;
+ 	}
+
+
+
+    </style>
+    <body>
+	
+	<div class="navigation">
+    <a href="index.html"></i>Home</a>
+    <a href="relation.html"></i>Relation</a>
+	<a href="books.html"></i>Great Books</a>
+	<a href="quiz.html"></i>Quiz</a>
+	</div>
+
+	<br>
+
+	<center>
+		<br>
+		
+		<div class="half">
+			<iframe style="max-width:100%" src="https://wordwall.net/embed/196e87af2cfb4dd8b1a5d788768f275b?themeId=21&templateId=69&fontStackId=0" width="950" height="550" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</center>
+
+	<br><br><br>
+
+
+	<footer class="footer">
+			<div class="outer-footer">
+				<h3>  &copy; Arts and Humanities (Great Books)</h3>	
+			</div>      
+	</footer>
+
+
+
+	
+    </body>
+</html>
